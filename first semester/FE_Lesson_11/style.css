@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.post{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.post-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.post-bottom{
+    padding:20px;
+}
+
+.post-text{
+    margin: 15px 0;
+}
+
+.post-title,
+.post-link,
+.post-text{
+    display: inline-block;
+}
+
+.post-title{
+    width: 100px;
+}
+
+.pane {
+    display: none;
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+.is-active {
+    display: block;
+}

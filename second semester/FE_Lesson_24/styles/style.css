@@ -1,0 +1,15 @@
+.icon{
+    fill: red;
+    width: 100px;
+}
+.icon:hover{
+    stroke: black;
+}
+.icon-fonts{
+    color: green;
+    font-size: 50px;
+}
+.icon-fonts::before{
+    color: rgb(128, 73, 0);
+    font-size: 50px;
+}

@@ -1,0 +1,20 @@
+.gradient-wrap{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grad{
+    width: 48%;
+    height: 300px;
+}
+
+.grad:nth-child(1){
+    background-color: aqua;
+}
+
+.grad:nth-child(2){
+    background-color: rgb(34, 112, 5);
+}

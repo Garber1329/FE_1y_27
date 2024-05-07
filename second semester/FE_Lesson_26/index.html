@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <h1 class="title">Modal Window</h1>
+    <button class="btn btn-open" type="button" data-modal-open>Open modal</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>Закрити</button>
+            <form action="" class="form">
+                <h1 class="form-title">Order pizzaaaa</h1>
+                <label>
+                    <input class="form-input" type="number" name="name" placeholder="Count of pizzaaaa*"
+                    min="1" max="50" required >
+                </label>
+                <label>
+                    <input class="form-input" type="text" name="name" placeholder="Your name*"
+                    minlength="3" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+                </label>
+                <label>
+                    <input class="form-input" type="email" name="email" placeholder="Your e-mail*"
+                    required>
+                </label>
+                <label>
+                    <input class="form-input" type="tel" name="tel" placeholder="Your phone*"
+                    required min="10" max="20">
+                </label>
+                <textarea class="form-input" name="message" id="" cols="30" rows="10"
+                    placeholder="Your message*" required minlength="20"></textarea>
+                <button class="form-btn" type="submit">Send message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

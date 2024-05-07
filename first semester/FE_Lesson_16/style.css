@@ -1,0 +1,116 @@
+html{
+    font-size: 18px;
+}
+body {
+    font-size: 16px;
+}
+h1 {
+    font-size: 2em;    	/* = 32px */
+}
+h2 {
+    font-size: 1.5em;  	/* = 24px */
+}
+aside {
+    font-size: 1rem; 	/* = 12px */
+}
+p::selection{
+    background-color: black;
+    color: white;
+}
+
+p::first-letter{
+    font-size: 3rem;
+    color: red;
+}
+
+p::first-line{
+    background-color: aqua;
+    line-height: 1.2;
+    color: blue;
+}
+
+h1{
+
+}
+
+h1::before{
+    content: "\272A";
+    font-size: 30px;
+    color: chocolate;
+}
+
+h1::after{
+    content: "\272A";
+    font-size: 30px;
+    color: green;
+}
+
+h1:hover::before{
+    color: blue;
+}
+
+h1:hover::after{
+    color:darkmagenta;
+}
+
+.list{
+    padding: 0;
+    font-size: 34px;
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+}
+
+.list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.list-link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.list-link:hover{
+    color: darkcyan;
+}
+
+.list-link:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: darkcyan;
+    bottom: -10px;
+    left: 0px;
+}
+
+.div{
+    border: 3px solid black;
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+}
+
+.div::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+
+
+
+
+

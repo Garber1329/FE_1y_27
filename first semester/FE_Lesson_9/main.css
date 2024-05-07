@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-size: 14px;
+}
+.title{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 0px red, 0px 0px 20px yellow;
+}
+
+.link{
+    font-weight: bold;
+}
+
+.text{
+     text-indent: 20px;
+}
+
+.text::first-letter{
+    font-size: 40px;
+   
+    color: red;
+}
+
+.text::first-line{
+    line-height: 110%;
+    font-weight: 700;
+}
+
+.text::selection{
+    color: black;
+    background-color: yellow;
+}
+
+.title::before{
+    content: "🚗";
+}
+
+.title::after{
+    content: "🚗";
+}
+
+

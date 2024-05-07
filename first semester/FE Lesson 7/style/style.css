@@ -1,0 +1,52 @@
+:root {
+    --text-white: tomato;
+    --size-text: 15px;
+}
+
+.text1 {
+    color: var(--text-white, white);
+    background-color: black;
+    font-size: var(--size-text);
+    padding: 10px;
+    border: 2px solid tomato;
+}
+
+.text2 {
+    color: var(--text-white);
+    background-color: black;
+    font-size: var(--size-text);
+    padding: 10px;
+    border: 2px solid tomato;
+}
+
+.text3 {
+    color: var(--text-white);
+    background-color: black;
+    font-size: var(--size-text);
+    padding: 10px;
+    border: 2px solid tomato;
+}
+
+.alert{
+    --alert-text-color: black;
+    --alert-accent-color: tomato;
+}
+
+.alert-text {
+    color: var(--alert-text-color);
+    border: 1px solid var(--alert-accent-color);
+}
+
+.alert-icon {
+    background-color: var(--alert-accent-color);
+    
+}
+
+a
+{
+    color: teal!important;
+}
+
+a{
+    color: rgb(2, 4, 4)!important;
+}

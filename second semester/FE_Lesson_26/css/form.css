@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+.form-wrap{
+    background-image: url('../img/Cloud.svg');
+    background-position: left 100px;
+    background-size: cover;
+}
+
+.form-wrap .container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 557px;
+    margin: 175px 0;
+}
+.form-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.form-input {
+    padding: 30px 45px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    width: 100%;
+}
+.form-btn {
+    width: fit-content;
+    background-color: #FAD34F;
+    color: #fff;
+    border: 0;
+    padding: 27px 52px;
+    border-radius: 50px;
+    margin-top: 23px;
+}
+.form-img{
+    position: absolute;
+    top: -100px;
+    right: -600px;
+    border-radius: 50%;
+}
+.form::before{
+    content: url('../img/red_cartoon\ 4.svg');
+    position: absolute;
+    top: 20px;
+    left: -100px;
+}
+.form-img-wrap::before{
+    content: url('../img//red_cartoon\ 3.svg');
+    position: absolute;
+    right: 100px;
+    bottom: 150px;
+    z-index: 10;
+}
+.form-img-wrap::after{
+    content: url('../img/goodie1.svg');
+    position: absolute;
+    right: 250px;
+    bottom: 380px;
+    z-index: 11;
+}
+.form-input:focus {
+    outline-width: 0;
+}
+.form-input:not(:placeholder-shown):required:valid {
+    border-color: green;
+  }
+  
+  .form-input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }

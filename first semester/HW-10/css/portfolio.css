@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400 ;
+  src: url(/Roboto/Roboto-Regular.ttf);
+}
+@font-face  {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  src: url(/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  src: url(/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  src: url(/Roboto/Roboto-Medium.ttf);
+}
+*{
+  font-weight: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.top-container {
+  border-radius: 10px 10px 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: 0 solid black;
+}
+.studio {
+  font-family: "Roboto" , sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(33, 33, 33, 1);
+  box-shadow: 1px 1px 10px;
+}
+
+.webstudio1 {
+  font-weight: 700;
+  size: 26px;
+  line-height: 2;
+  color: rgba(33, 150, 243, 1);
+  text-decoration: none;
+  box-shadow: 1px 1px 10px;
+}
+
+.mail1 {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-family: "Roboto" , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  box-shadow: 1px 1px 10px;
+}
+
+.tel1 {
+  font-family: "Roboto" , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(117, 117, 117, 1);
+  box-shadow: 1px 1px 10px;
+}
+
+.studio:hover {
+  color: rgba(33, 150, 243, 1);
+}
+
+.portfolio22 {
+  font-family: "Roboto" , sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(33, 33, 33, 1);
+  box-shadow: 1px 1px 10px;
+}
+
+.portfolio22:hover {
+  color: rgba(33, 150, 243, 1);
+}
+
+.kontakti {
+  font-family: "Roboto" , sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height:1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(33, 33, 33, 1);
+  box-shadow: 1px 1px 10px;
+}
+.kontakti:hover {
+  color: rgba(33, 150, 243, 1);
+}
+.button1 {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2px;
+  letter-spacing: 2px;
+  padding: 7px 13px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+.button1:hover {
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
+}
+.button2 {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding: 7px 13px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+.button2:hover {
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.button3 {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding: 7px 13px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+.button3:hover {
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
+}
+.button4 {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding: 7px 13px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+.button4:hover {
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
+}
+.button5 {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding: 7px 13px;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+.button5:hover {
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.texnokrak {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.vtexnokrak {
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+}
+.poster1 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster1-2 {
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+}
+.poster2 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster2-2 {
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+}
+.poster3 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster3-2 {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.poster4 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster4-2 {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.poster5 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster5-2 {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.poster6 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster6-2 {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.poster7 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster7-2 {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.poster8 {
+  color: rgba(33, 33, 33, 1);
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.poster8-2 {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.sec2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-for-button123 {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+}
+.figures {
+  border: 1px solid gray;
+  box-shadow: 10px 3px 10px;
+}
+.foot-container-1 {
+  font-family: "Roboto" , sans-serif;
+  font-weight: 300;
+  background-color: rgba(47, 48, 58, 1);
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.adress1 {
+  color: white;
+  font-size: 12px;
+}
+.email100 {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.tel22 {
+  font-size: 14px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}

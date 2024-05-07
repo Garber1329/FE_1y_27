@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.box {
+    margin: 10px;
+    flex-basis: calc(50% - 20px);
+    height: 200px;
+}
+
+.box:nth-child(1) {
+    background-color: darkorange;
+    background-image: url('./img/bee.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+.box:nth-child(2) {
+    background-color: deeppink;
+    background-image: url("./img/chick.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 50px;
+}
+
+.box:nth-child(3) {
+    background-color: green;
+    background-image: url("./img/koala.png");
+    background-repeat: repeat-y;
+    background-position: left;
+    background-size: 50px;
+
+}
+
+.box:nth-child(4) {
+    background-color: olive;
+    background-image: url("./img/lion.png");
+    background-size: 50px;
+}
+
+.card {
+    width: 31%;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgb(222, 222, 222);
+}
+
+.card-price {
+    background-color: royalblue;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-price_wrap-price {
+    text-transform: uppercase;
+}
+
+.card-price_dollar {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.card-price_wrap-price span {
+    font-size: 50px;
+}
+
+.card-desc {
+    padding: 10px 0;
+}
+
+.card-desc p {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.card-desc p:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    width: 40%;
+    height: 1px;
+    background-color: gray;
+}
+
+/* .btn{
+    display: block;
+    margin: 0 auto;
+    background-color: royalblue;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}  */
+/* CSS */
+.btn {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    padding: 20px 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.section{
+    height: 50vh;
+    width: 100%;
+    background-image: 
+    radial-gradient(circle at center, #de105296, #5fc3e486),
+    url("./img/sebastian-pena-lambarri-YV593oyMKmo-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 44px;
+}

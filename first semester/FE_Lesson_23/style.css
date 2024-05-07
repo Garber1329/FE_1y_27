@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.circle{
+    fill: green;
+    fill-opacity: 0.6;
+    stroke: red;
+    stroke-width: 5px;
+    stroke-opacity: 0.6;
+}
+.circle:hover{
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+.youtube{
+    fill: red;
+}
+
+.youtube{
+    fill: red;
+}

@@ -1,0 +1,51 @@
+* {
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --clr: #2196f3;
+}
+
+.header{
+  padding: 24px 0;
+}
+
+.main-title{
+  background-color: #2F303A;
+  color: white;
+  padding: 200px 0;
+  position: relative;
+}
+
+.main-button{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.main_section{
+  padding: 94px 0;
+}
+
+.main-sec_wrap{
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
+.main-secc{
+  padding: 94px 0;
+  background-color: #F5F4FA;
+}
+
+.footer{
+  padding: 60px;
+  background-color: #2F303A;
+}
+
+.title{
+  margin-bottom: 50px;
+}

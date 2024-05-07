@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <link rel="icon" href="img/golden/Group 1.svg" type="image/svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="img/golden/symbol-defs.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/golden.css">
+</head>
+
+<body>
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="container">
+            <a class="header-logo" href="index.html">
+                <img src="img/golden/Logo.svg" alt="Golden">
+            </a>
+            <nav class="header-navigation">
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-link" href="fotoblog.html">FotoBlog</a></li>
+                    <li class="header-item"><a class="header-link" href="mogo.html">MoGo</a></li>
+                    <li class="header-item"><a class="header-link header-link_active" href="#">About</a></li>
+                    <li class="header-item"><a class="header-link" href="#">Contact</a></li>
+                    <li class="header-item"><a class="header-link" href="#">Foto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <!-- Про Services -->
+        <section class="services">
+            <div class="container">
+                <h2 class="services-title title">Services</h2>
+                <article class="services-list">
+                    <div class="services-item">
+                        <svg class="icon"  width="70px" height="70px">
+                            <use href="./img/golden/symbol-defs.svg#icon-Group-1"></use>
+                        </svg>
+                        <h3>E-Commerce</h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="services-item">
+                        <svg class="icon"  width="70px" height="70px">
+                            <use href="./img/golden/symbol-defs.svg#icon-Group-2"></use>
+                        </svg>
+                        <h3>Responsive Web</h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                    <div class="services-item">
+                        <svg class="icon"  width="70px" height="70px">
+                            <use href="./img/golden/symbol-defs.svg#icon-Group-3"></use>
+                        </svg>
+                        <h3>Web Security</h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Форма зв'язку -->
+        <section class="contact">
+            <div class="container">
+                <h2 class="contact-title title">Contact us</h2>
+                <form class="contact-form" action="/submit_form" method="post">
+                    <div class="form-wrap">
+                        <div class="form-wrap-left">
+                            <label class="contact-label" for="name"></label><br>
+                            <input class="contact-input" type="text" id="name" name="name" required><br><br>
+                        
+                            <label class="contact-label" for="email"></label><br>
+                            <input class="contact-input" type="email" id="email" name="email" required><br><br>
+                        
+                            <label class="contact-label" for="subject"></label><br>
+                            <input class="contact-input" type="text" id="subject" name="subject" required><br><br>
+                        </div>
+                        
+                        <div class="form-wrap-right">
+                            <label class="contact-label" for="message"></label><br>
+                            <textarea class="contact-input contact-textarea" id="message" name="message" rows="4" cols="50"
+                                required></textarea><br><br>
+                        </div>
+                    </div>
+
+                    <input class="contact-button" type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

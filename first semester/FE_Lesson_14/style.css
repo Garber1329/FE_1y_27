@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item{
+    flex-basis: calc((100% - 60px) / 4);
+    font-size: 30px;
+    height: 200px;
+    text-align: center;
+}
+
+.item#one{
+    background-color: rgb(126, 126, 254);
+}
+
+.item#two{
+    background-color: chocolate;
+}
+
+.item#three{
+    background-color: rgb(255, 57, 57);
+}
