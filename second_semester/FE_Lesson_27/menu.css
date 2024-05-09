@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    padding-top: 80px;
+}
+.header{
+    background-color: rgb(226, 226, 226);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu-item {
+    margin-right: 15px;
+    position: relative;
+    padding: 15px 25px;
+}
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(13, 13, 13);
+    font-weight: 700;
+    font-size: 20px;
+}
+.menu-link:hover{
+    color: rgb(128, 83, 0);
+}
+.submenu {
+    list-style: none;
+    background-color: rgb(226, 226, 226);
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    display: none;
+}
+.submenu-item {
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+}
+.menu-item:hover .submenu{
+    display: block;
+}
+.submenu-item a{
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.submenu-item a:hover{
+    color: rgb(128, 83, 0);
+}
+
+.section {
+    padding: 70px 0;
+}
+.section-title {
+    margin-bottom: 20px;
+}
+.section-text {
+    font-size: 20px;
+}
+.section:nth-child(1){
+    background-color: aqua;
+}
+.section:nth-child(2){
+    background-color: bisque;
+}
+.section:nth-child(3){
+    background-color: rgb(89, 255, 0);
+}
+.section:nth-child(4){
+    background-color: rgb(243, 129, 146);
+}
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: chartreuse;
+    font-size: 50px;
+    text-decoration: none;
+    color: #000000;
+}
