@@ -62,6 +62,7 @@
     position: absolute;
     top: 170px;
     right: 120px;
+    z-index: 10;
 }
 
 .header-social {
@@ -78,4 +79,29 @@
 
 .header-social-item:not(:last-child){
     margin-right: 37px;
+}
+.header-decok-brown{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 68px;
+    right: 0;
+    background-color: #99823D;
+    z-index: 0;
+}
+.header-slider-thumb {
+    position: relative;
+}
+.header-slider-buttons {
+    position: absolute;
+    bottom: 0;
+    right: -200px;
+    display: flex;
+}
+.header-slider-buttons span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    margin-right: 20px;
 }
