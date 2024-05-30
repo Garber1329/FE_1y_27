@@ -13,12 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap"
         rel="stylesheet">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/golden.css">
 </head>
 
 <body>
     <!-- Шапка сайту -->
-    <header class="header">
+    <header class="header animate__animated animate__fadeInDown animate__slow">
         <div class="container">
             <a class="header-logo" href="index.html">
                 <img src="img/golden/Logo.svg" alt="Golden">
@@ -38,7 +42,7 @@
         <!-- Про Services -->
         <section class="services">
             <div class="container">
-                <h2 class="services-title title">Services</h2>
+                <h2 class="services-title title animate__animated animate__backInDown animate__delay-1s	">Services</h2>
                 <article class="services-list">
                     <div class="services-item">
                         <svg class="icon"  width="70px" height="70px">
@@ -70,10 +74,10 @@
         <!-- Форма зв'язку -->
         <section class="contact">
             <div class="container">
-                <h2 class="contact-title title">Contact us</h2>
+                <h2 class="contact-title title animate__animated animate__backInDown animate__delay-3s">Contact us</h2>
                 <form class="contact-form" action="/submit_form" method="post">
                     <div class="form-wrap">
-                        <div class="form-wrap-left">
+                        <div class="form-wrap-left animate__animated animate__fadeInLeft animate__delay-3s">
                             <label class="contact-label" for="name"></label><br>
                             <input class="contact-input" type="text" id="name" name="name" required><br><br>
                         
@@ -84,7 +88,7 @@
                             <input class="contact-input" type="text" id="subject" name="subject" required><br><br>
                         </div>
                         
-                        <div class="form-wrap-right">
+                        <div class="form-wrap-right animate__animated animate__fadeInRight animate__delay-3s">
                             <label class="contact-label" for="message"></label><br>
                             <textarea class="contact-input contact-textarea" id="message" name="message" rows="4" cols="50"
                                 required></textarea><br><br>

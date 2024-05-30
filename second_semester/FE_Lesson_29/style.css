@@ -1,0 +1,44 @@
+.btn{
+    border: 0;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+}
+
+.btn::after,
+.btn::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: 5px;
+    transition: transform 0.3s cubic-bezier(0.83, -0.08, 0.32, 1) ;
+}
+
+.btn::before{
+    background-image: url('./coffee-lover.png');
+}
+.btn::after{
+    background-image: url('./coffee-beans.png');
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(50px);
+}
+.btn:hover::after{
+    transform: translateY(-10px);
+}
+.btn:hover::before{
+    transform: translateY(50px);  
+}
+.btn:hover{
+    background-color: chocolate;
+}

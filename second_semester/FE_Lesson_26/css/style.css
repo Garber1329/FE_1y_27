@@ -28,6 +28,8 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1),
+    visibility 500ms cubic-bezier(0.83, -0.08, 0.32, 1);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -45,6 +47,7 @@ body {
     padding: 15px;
     background-color: skyblue;
     transform: translate(-50%, -50%);
+    transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1);
 }
 
 .modal .form{

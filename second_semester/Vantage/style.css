@@ -105,3 +105,54 @@
     background-color: gray;
     margin-right: 20px;
 }
+
+.cards-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.cards-item {
+    width: 412px;
+    height: 342px;
+    position: relative;
+    color: white;
+}
+
+.cards-item img{
+    width: 100%;
+}
+.cards-grid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+.cards-grid-item {
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid white;
+}
+.card-item-new {
+    position: absolute;
+    width: 25%;
+    height: 31px;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+.card-item-title {
+    position: absolute;
+    width: 75%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+.card-item-desc {
+    position: absolute;
+    background-color: #99823D;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+}
