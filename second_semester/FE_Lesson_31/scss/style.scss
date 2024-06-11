@@ -1,0 +1,24 @@
+:root {
+    --accent-color-text: #03a9f4;
+    --text-color-nav: #7d7d7d;
+    --main-text-color: #626262;
+    --text-color-light: #b4ad9e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'components/normalize';
+
+.container {
+    width: 1006px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@import 'components/variables';
+@import 'components/header';
+@import 'components/gallery';
+@import 'components/button';

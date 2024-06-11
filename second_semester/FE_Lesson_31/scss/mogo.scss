@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-text: #95e1d3;
+  --active-link: #f38181;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import 'mogo/header';
+@import 'mogo/we-work-with';
+@import 'mogo/who-we-are';
+@import 'mogo/footer';

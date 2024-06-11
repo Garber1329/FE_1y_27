@@ -1,0 +1,59 @@
+.who-we-are-title p {
+    color: #b6b6b6;
+    margin-top: 45px;
+    margin-bottom: 27px;
+  }
+  
+  .who-we-are-item img {
+    width: 100%;
+    
+    object-fit: cover;
+  }
+  
+  .who-we-are-item{
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
+  .who-we-are-item figcaption {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .who-we-are-title {
+    text-align: center;
+  }
+  
+  .who-we-are-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .who-we-are-profesion {
+    font-family: "Roboto", sans-serif;
+    color: #b6b6b6;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  
+  .who-we-are-img-wrap{
+    position: relative;
+    display: block;
+  }
+  .who-we-are-gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: linear-gradient(to bottom, #f3743583, #fdc63083);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .who-we-are-img-wrap:hover .who-we-are-gradient{
+    display: flex;
+  }
+  .who-we-are-img{
+    display: block;
+  }
