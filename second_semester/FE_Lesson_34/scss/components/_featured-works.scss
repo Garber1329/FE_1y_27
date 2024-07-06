@@ -1,0 +1,53 @@
+.featured-works_header {
+    color: $dark;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 270%;
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list_item {
+    display: flex;
+    padding: 29px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.item_img {
+    margin-right: 18px;
+}
+
+.item-header {
+    color: $dark;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 144%;
+    margin: 0 0 16px 0;
+}
+
+.item_item-info {
+    display: flex;
+    margin: 0 0 16px 0;
+}
+
+
+.item-info_data {
+    margin-right: 30px;
+    color: white;
+    background-color: #142850;
+    padding: 2px 10px;
+    border-radius: 16px;
+}
+
+.item-dsc {
+    margin: 0;
+    padding-right: 46px;
+
+    &-blog{
+        max-width: 680px;
+    }
+}

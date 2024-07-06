@@ -24,9 +24,8 @@
   }
   
   .who-we-are-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    @extend %flex;
+    gap: 30px; 
   }
   
   .who-we-are-profesion {

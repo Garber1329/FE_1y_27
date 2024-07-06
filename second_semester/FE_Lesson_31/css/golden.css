@@ -1,0 +1,160 @@
+:root {
+  --yellow-text: #fed136;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  overflow-X: hidden;
+}
+
+.container {
+  width: 942px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.form-wrap, .services-item, .services-list, .header-list, .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 44px 0;
+}
+.header-list {
+  list-style: none;
+}
+.header-list .header-item {
+  margin-right: 40px;
+}
+.header-list .header-item .header-link {
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--yellow-text);
+  text-decoration: none;
+}
+.header-list .header-item .header-link:hover {
+  color: #725f1a;
+}
+
+.header-link_active {
+  color: var(--yellow-text);
+}
+.header-link_active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--yellow-text);
+  bottom: 0;
+  left: 0;
+}
+
+.animate__delay-1s {
+  transition-delay: 1s;
+}
+
+.services-item p {
+  font-family: "Roboto Slab", serif;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 18px;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.services-item img,
+.services-item h3 {
+  margin-bottom: 15px;
+}
+
+.services-list {
+  gap: 30px;
+}
+
+.services-item h3,
+.services-item p {
+  text-align: center;
+}
+
+.services-item p {
+  line-height: 1.5;
+}
+
+.services-item img {
+  width: 75px;
+}
+
+.services-item {
+  flex-direction: column;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.contact-label {
+  font-weight: 700;
+  color: #bbbbbb;
+}
+
+.contact {
+  background-color: #222222;
+}
+
+.contact-title {
+  color: white;
+}
+
+.contact-input {
+  width: 455px;
+  height: 50px;
+}
+
+.contact-textarea {
+  height: 212px;
+}
+
+.contact-button {
+  color: white;
+  background-color: var(--yellow-text);
+  padding: 23px 33px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  border-radius: 5px;
+}
+
+.form-wrap-left,
+.form-wrap-right {
+  width: 48%;
+}
+
+.contact-button {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  margin-top: 30px;
+}

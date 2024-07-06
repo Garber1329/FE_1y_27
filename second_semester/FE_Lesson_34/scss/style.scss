@@ -1,0 +1,130 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+.container {
+    width: 900px;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
+@import './components/untills/variables';
+@import './components/header';
+@import './components/recent-posts';
+@import './components/featured-works';
+@import './components/footer';
+@import './components/blog-list';
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+
+  .main-page{
+    padding-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    .info{
+      width: 60%;
+    }
+  }
+
+  .card{
+    max-width: 330px;
+  }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+
+  .main-page{
+    flex-direction: column-reverse;
+
+    .info{
+      width: 100%;
+      text-align: center;
+
+      .info_header{
+        padding: 0 20px 0 20px;
+      }
+    }
+  }
+
+  .cards{
+    flex-direction: column;
+  
+    .card{
+      max-width: 100%;
+      
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+
+      .card-info{
+        justify-content: space-between;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .list_item{
+    flex-direction: column;
+
+    .item_img{
+      height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .item_wrap{
+    .item-header{
+      margin-top: 20px;
+    }
+    .item_item-info p{
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .featured-works_header{
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .list{
+    margin: 0;
+  }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+    max-width: 100%;
+	}
+ 
+  .main-page .info .info_header {
+    padding: 0;
+  }
+  .main-page{
+    padding-top: 30px;
+    
+    .info_header{
+      font-size: 28px;
+    }
+  }
+
+  .navigation{
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .item_img{
+    margin-right: 0;
+  }
+}

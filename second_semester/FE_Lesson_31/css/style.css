@@ -1,12 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
-:root {
-  --accent-color-text: #03a9f4;
-  --text-color-nav: #7d7d7d;
-  --main-text-color: #626262;
-  --text-color-light: #b4ad9e;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -329,24 +322,53 @@ template {
   padding: 0 15px;
 }
 
+.btn-load, .btn-close {
+  background-color: #ffffff;
+  border: 1px solid #626262;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #626262;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, transform 0.1s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery-list, .header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .header {
   padding: 71px 0;
 }
 .header ul {
-  display: flex;
   list-style: none;
-  justify-content: center;
 }
 .header ul li {
   /* Додаткові властивост */
 }
 .header ul li:not(:last-child) {
-  margin-right: 80px;
+  margin-right: 50px;
 }
 
-.menu {
-  font-family: "Open Sans Condensed", sans-serif;
-}
 .menu ul {
   list-style: none;
   margin: 0;
@@ -361,10 +383,11 @@ template {
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #7d7d7d;
   display: block;
   position: relative;
   padding: 4px 0;
+  font-weight: 400;
 }
 .menu a::before {
   content: "";
@@ -394,8 +417,6 @@ template {
 }
 
 .gallery-list {
-  display: flex;
-  flex-wrap: wrap;
   gap: 65px;
 }
 .gallery-list .gallery-item {
@@ -408,35 +429,25 @@ template {
 }
 .gallery-list .gallery-item .gallery-title {
   margin: 36px 0;
+  color: #626262;
+}
+.gallery-list .gallery-item .gallery-name {
+  color: #b4ad9e;
+}
+.gallery-list .gallery-item .gallery-desc {
+  color: #626262;
 }
 
-.gallery-button {
-  background-color: #ffffff;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow 0.2s, transform 0.1s;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-  margin: 0 auto;
-  display: block;
+.btn-close {
+  background-color: red;
+  color: white;
 }
+
+.btn-load {
+  background-color: green;
+  color: rgb(255, 0, 0);
+}
+
 .gallery-button:focus-visible {
   box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
   transition: box-shadow 0.2s;
@@ -451,4 +462,26 @@ template {
   color: #dddddd;
   cursor: not-allowed;
   opacity: 1;
+}
+
+.dog-icon {
+  background-image: url("../img/dog.png");
+}
+
+.cat-icon {
+  background-image: url("../img/cat.png");
+}
+
+.bird-icon {
+  background-image: url("../img/bird.png");
+}
+
+.turtle-icon {
+  background-image: url("../img/turtle.png");
+}
+
+.box-icon {
+  width: calc(180px + 20px);
+  height: 200px;
+  background-size: contain;
 }

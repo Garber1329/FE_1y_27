@@ -19,6 +19,12 @@ body {
   padding: 0 15px;
 }
 
+.footer .container, .who-we-are-list, .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-list {
   display: flex;
 }
@@ -30,13 +36,13 @@ body {
 }
 .header-list .header-link {
   text-transform: uppercase;
-  color: var(--blue-text);
+  color: #95e1d3;
   text-decoration: none;
   position: relative;
   padding-bottom: 10px;
 }
 .header-list .header-link:hover {
-  color: var(--active-link);
+  color: #f38181;
 }
 
 .header-link_active {
@@ -55,12 +61,6 @@ body {
 .header {
   padding: 17px 0;
 }
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 section {
   margin-bottom: 80px;
 }
@@ -157,8 +157,6 @@ section {
 }
 
 .who-we-are-list {
-  display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -196,12 +194,6 @@ section {
 .footer {
   border-top: 1px solid #b6b6b6;
 }
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .footer-form {
   height: 39px;
   display: flex;

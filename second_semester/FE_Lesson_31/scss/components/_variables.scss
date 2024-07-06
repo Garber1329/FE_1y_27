@@ -1,2 +1,15 @@
 $accent-color: rgba(3, 169, 244, 1);
-;
+$text-color-nav: #7d7d7d;
+$main-text-color: #626262;
+$text-color-light: #b4ad9e;
+
+$colors:(
+    'accent': rgba(3, 169, 244, 1),
+    'nav': #7d7d7d,
+    'main': #626262,
+    'light': #b4ad9e
+);
+
+@function getColor($key){
+    @return map-get($colors , $key)
+}

@@ -1,7 +1,6 @@
 
 .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flex;
     gap: 65px;
 
     .gallery-item {
@@ -15,6 +14,15 @@
 
         .gallery-title {
             margin: 36px 0;
+            color: getColor('main');
+        }
+
+        .gallery-name{
+            color: $text-color-light;
+        }
+
+        .gallery-desc{
+            color: $main-text-color;
         }
     }
 }

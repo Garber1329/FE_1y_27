@@ -1,0 +1,49 @@
+.contact-label {
+    font-weight: 700;
+    color: #bbbbbb;
+}
+
+.contact {
+    background-color: #222222;
+}
+
+.contact-title {
+    color: white;
+}
+
+.contact-input {
+    width: 455px;
+    height: 50px;
+}
+
+.contact-textarea {
+    height: 212px;
+}
+
+.contact-button {
+    color: white;
+    background-color: var(--yellow-text);
+    padding: 23px 33px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    border-radius: 5px;
+}
+
+.form-wrap {
+    @extend %flex;
+}
+
+.form-wrap-left,
+.form-wrap-right {
+    width: 48%;
+}
+
+.contact-button {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 30px;
+}

@@ -1,0 +1,67 @@
+.header{
+    position: relative;
+}
+
+.navigation{
+    position: absolute;
+    top: 27px;
+    right:67px;
+
+    &_link{
+        color: $dark;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 145%;
+        text-decoration: none;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:hover{
+        color: $primary;
+    }
+}
+}
+
+.main-page{
+    display: flex;
+    padding: 160px 0 70px 0;
+}
+.header{
+
+    &_img{
+        max-height: 243px;
+    }
+}
+
+.info{
+    
+    &_header{
+        color: $dark;
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 136%;
+    }
+    &_text{
+        color: $dark;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 500px;
+    }
+    &_btn{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
+        background-color: $primary;
+        padding: 13px 20px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+        }
+    }}

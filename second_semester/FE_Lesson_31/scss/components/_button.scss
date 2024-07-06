@@ -1,31 +1,13 @@
 
+.btn-close{
+   @include btn-load-mix(red, white);
+}
+
+.btn-load{
+    @include btn-load-mix(green, rgb(255, 0, 0))
+}
+
 .gallery-button {
-    background-color: #ffffff;
-    border: 1px solid #222222;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #222222;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-        "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    margin: 0;
-    outline: none;
-    padding: 13px 23px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    touch-action: manipulation;
-    transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
-        transform 0.1s;
-    user-select: none;
-    -webkit-user-select: none;
-    width: auto;
-    margin: 0 auto;
-    display: block;
 
     &:focus-visible {
         box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;

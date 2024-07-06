@@ -11,13 +11,13 @@
 
   .header-link {
     text-transform: uppercase;
-    color: var(--blue-text);
+    color: getColor('accent');
     text-decoration: none;
     position: relative;
     padding-bottom: 10px;
 
     &:hover {
-      color: var(--active-link);
+      color: getColor('active');
     }
 
   }
@@ -42,9 +42,7 @@
   padding: 17px 0;
 
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex;
 
   }
 }

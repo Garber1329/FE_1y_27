@@ -19,6 +19,8 @@ body {
   padding: 0 15px;
 }
 
+@import 'mogo/variables';
+@import 'mogo/untils/placeholder', 'mogo/untils/mixin';
 @import 'mogo/header';
 @import 'mogo/we-work-with';
 @import 'mogo/who-we-are';

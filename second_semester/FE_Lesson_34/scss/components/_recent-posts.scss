@@ -1,0 +1,72 @@
+.recent-posts{
+    background-color: #EDF7FA;
+    padding: 0 0 32px 0;
+}
+
+.headline{
+    display: flex;
+    justify-content: space-between;
+
+    &_header{
+        color: $dark;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 270%;
+        text-decoration: none;
+    }
+
+    &_link{
+        color: $secondry;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%;
+        text-decoration: none;
+        padding: 20px 0;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 418px;
+
+    &_header{
+        color: $dark;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 146%;
+        padding: 20px 0;
+    }
+}
+
+.card-info{
+        color: $dark;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 0;
+        display: flex;
+        
+        &_date{
+            margin-right: 30px;
+        }
+
+        .card-dsc{
+            color: $dark;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                max-width: 300px;
+        }
+                
+        }

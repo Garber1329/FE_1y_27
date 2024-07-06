@@ -1,10 +1,3 @@
-:root {
-    --accent-color-text: #03a9f4;
-    --text-color-nav: #7d7d7d;
-    --main-text-color: #626262;
-    --text-color-light: #b4ad9e;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +11,24 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+
 @import 'components/variables';
+
+@import 'components/untils/placeholder', 'components/untils/mixin';
 @import 'components/header';
 @import 'components/gallery';
 @import 'components/button';
+
+
+@each $animal in dog, cat, bird, turtle{
+    .#{$animal}-icon {
+        background-image: url('../img/#{$animal}.png');
+    }
+}
+$var: 180px;
+
+.box-icon{
+    width: calc(#{$var} + 20px);
+    height: 200px;
+    background-size: contain;
+}

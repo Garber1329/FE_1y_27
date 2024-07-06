@@ -1,0 +1,29 @@
+:root {
+  --yellow-text: #fed136;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  overflow-X: hidden;
+}
+
+.container{
+  width: 942px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+@import 'golden/untils/placeholder';
+@import 'golden/header';
+@import 'golden/services';
+@import 'golden/contact';

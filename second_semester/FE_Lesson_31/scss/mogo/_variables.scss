@@ -1,0 +1,8 @@
+$colors:(
+    'accent': #95e1d3,
+    'active': #f38181
+);
+
+@function getColor($key){
+    @return map-get($colors , $key)
+}
