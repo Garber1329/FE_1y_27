@@ -1,0 +1,44 @@
+.partners {
+    padding: 60px 0;
+    text-align: center;
+}
+.partner__title {
+}
+.partner__list {
+    list-style: none;
+    padding: 0;
+}
+.partner__item {
+}
+.thumb {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+}
+.partner__img {
+    width: 100%;
+}
+.partner__icon{
+    @extend %img-icon;
+}
+.partner__icon_one{
+    background-color: #FF4E50;
+}
+.partner__icon_two{
+    background-color: #FFA507;
+}
+.partner__icon_tree{
+    background-color: #1CD7AD;
+}
+.partner__icon_four{
+    background-color: #4E73DB;
+}
+.partner__name {
+}
+.partner_desc {
+}
+.partners__btn {
+    @include main-btn(white, #FF4E50);
+}
+.main-btn {
+}

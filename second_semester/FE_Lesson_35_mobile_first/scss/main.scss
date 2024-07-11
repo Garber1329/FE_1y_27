@@ -1,0 +1,105 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+   font-family: "Montserrat", sans-serif;
+}
+.container {
+    padding: 0 20px;
+}
+
+@import 'untils/mixin';
+@import 'untils/placeholder';
+@import 'components/header';
+@import 'components/partner';
+
+/* Стилі для малих екранів (телефони в альбомній оріентації, дисплей 576рх і більше) */
+
+@media (min-width:576px) { 
+    .share__title{
+        padding: 0 90px;
+    }
+    .share__btn,
+    .partners__btn{
+        width: auto;
+        padding: 10px 20px;
+    }
+    .partner__title{
+        padding: 0 100px;
+    }
+    .partner_desc{
+        padding: 0 150px;
+    }
+}
+
+/* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
+
+@media (min-width: 768px) { 
+    .container{
+        padding: 0;
+        width: 470px;
+        margin: 0 auto;
+    }
+    .share__logo{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation__logo{
+        display: inline;
+        font-size: 20px;
+        color: white;
+    }
+    .partner_desc,
+    .partner__title{
+        padding: 0;
+    }
+    .share__title{
+        padding: 0 50px;
+        font-size: 52px;
+        margin-bottom: 15px;
+    }
+    .share_desc{
+        font-size: 24px;
+    }
+    .share{
+        padding-top: 126px;
+    }
+    .partner__list{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .partner__item{
+        flex-basis: calc((100% - 50px)/2);
+    }
+    .header__container{
+        width: 670px;
+    }
+    
+}
+
+/* Стилі для великих екранів (ПК, дисплей 992рх і більше) */
+
+@media (min-width: 992px) { 
+    .container{
+        width: 914px;
+    }
+    .partner__list{
+        gap: 25px;
+    }
+    .partner__item{
+        flex-basis: calc((100% - 75px)/4);
+    }
+}
+
+/* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */
+
+@media (min-width: 1200px) { 
+
+}
+

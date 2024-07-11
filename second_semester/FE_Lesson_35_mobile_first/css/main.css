@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.partner__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  padding: 13px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.header {
+  background-image: url("../../img/569ed93e7f1daf75693507e7cd71d2eb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation {
+  text-align: center;
+  padding: 10px;
+}
+
+.navigation__btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 70px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navigation__btn:nth-child(1) {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 70px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.share {
+  padding: 138px 0;
+  text-align: center;
+  color: white;
+}
+
+.navigation__logo {
+  display: none;
+}
+
+.share__title {
+  text-transform: uppercase;
+}
+
+.share__btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid #FF4E50;
+  background-color: #FF4E50;
+  color: white;
+  border-radius: 70px;
+}
+
+.partners {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.partner__list {
+  list-style: none;
+  padding: 0;
+}
+
+.thumb {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.partner__img {
+  width: 100%;
+}
+
+.partner__icon_one {
+  background-color: #FF4E50;
+}
+
+.partner__icon_two {
+  background-color: #FFA507;
+}
+
+.partner__icon_tree {
+  background-color: #1CD7AD;
+}
+
+.partner__icon_four {
+  background-color: #4E73DB;
+}
+
+.partners__btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid #FF4E50;
+  background-color: white;
+  color: #FF4E50;
+  border-radius: 70px;
+}
+
+/* Стилі для малих екранів (телефони в альбомній оріентації, дисплей 576рх і більше) */
+@media (min-width: 576px) {
+  .share__title {
+    padding: 0 90px;
+  }
+  .share__btn,
+  .partners__btn {
+    width: auto;
+    padding: 10px 20px;
+  }
+  .partner__title {
+    padding: 0 100px;
+  }
+  .partner_desc {
+    padding: 0 150px;
+  }
+}
+/* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+    width: 470px;
+    margin: 0 auto;
+  }
+  .share__logo {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation__logo {
+    display: inline;
+    font-size: 20px;
+    color: white;
+  }
+  .partner_desc,
+  .partner__title {
+    padding: 0;
+  }
+  .share__title {
+    padding: 0 50px;
+    font-size: 52px;
+    margin-bottom: 15px;
+  }
+  .share_desc {
+    font-size: 24px;
+  }
+  .share {
+    padding-top: 126px;
+  }
+  .partner__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .partner__item {
+    flex-basis: calc((100% - 50px) / 2);
+  }
+  .header__container {
+    width: 670px;
+  }
+}
+/* Стилі для великих екранів (ПК, дисплей 992рх і більше) */
+@media (min-width: 992px) {
+  .container {
+    width: 914px;
+  }
+  .partner__list {
+    gap: 25px;
+  }
+  .partner__item {
+    flex-basis: calc((100% - 75px) / 4);
+  }
+}
+/* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */

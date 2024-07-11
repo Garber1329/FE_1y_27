@@ -1,0 +1,39 @@
+.header {
+    background-image: url('../../img/569ed93e7f1daf75693507e7cd71d2eb.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation {
+    text-align: center;
+    padding: 10px;
+}
+.navigation__btn {
+    @include log-btn(2px solid white);
+}
+.navigation__btn:nth-child(1) {
+    @include log-btn(none);
+}
+.share {
+    padding: 138px 0;
+    text-align: center;
+    color: white;
+}
+.navigation__logo{
+    display: none;
+}
+.share__logo {
+}
+.logo {
+}
+.share__title {
+    text-transform: uppercase
+}
+.share_desc {
+}
+.share__btn {
+    @include main-btn(#FF4E50, white);
+}
+.main-btn {
+}
