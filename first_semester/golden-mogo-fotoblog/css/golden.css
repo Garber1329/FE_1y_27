@@ -178,3 +178,8 @@ section {
 .animate__delay-1s {
   transition-delay: 1s;
 }
+
+/* .animate__animated{
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+} */

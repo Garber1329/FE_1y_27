@@ -32,6 +32,78 @@ body{
     }
 }
 
+/* mobile menu */
+@media (max-width: 768px) {
+    
+    label {
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+      position: relative;
+      z-index: 10;
+    }
+    label:hover {
+      cursor: pointer;
+    }
+    label span {
+      top: 15px;
+    }
+    label span,
+    label span::before,
+    label span::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: #333;
+      position: absolute;
+      right: 0;
+      transition: .3s;
+    }
+    label span::before {
+      top: -8px;
+    }
+    label span::after {
+      top: 8px;
+    }
+    .navigation__menu {
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ .navigation__menu{
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="checkbox"]:checked ~ label span {
+      transform: rotate(-45deg);
+    }
+    input[type="checkbox"]:checked ~ label span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    input[type="checkbox"]:checked ~ label span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    .navigation__menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 12px 8px #ececec;
+    }
+    .navigation__menu li {
+      margin: 15px 0;
+    }
+    .navigation__btn{
+      color: black!important;
+    }
+  }
+
 /* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
 
 @media (min-width: 768px) { 

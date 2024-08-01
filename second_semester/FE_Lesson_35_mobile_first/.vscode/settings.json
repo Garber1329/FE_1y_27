@@ -7,6 +7,7 @@
             "extensionName": ".css", // розширення вихідного файлу
             "savePath": "css" // папка, у яку буде компілюватись файл стилів
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 
 }
